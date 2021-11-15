@@ -4,6 +4,8 @@ import { Departments } from './components/Departments';
 import { MethodsStudies } from './components/MethodsStudies';
 import { Explcation } from './components/Explication';
 import { OurPlans } from './components/OurPlans';
+import { Depositions } from './components/ Depositions';
+import { ActionMobile } from './components/ActionMobile';
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
       <MethodsStudies />
       <Explcation />
       <OurPlans />
+      <Depositions />
+      <ActionMobile />
     </>
   );
 };
