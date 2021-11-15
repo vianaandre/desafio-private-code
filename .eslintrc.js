@@ -41,5 +41,6 @@ module.exports = {
     'consistent-return': 'off',
     'react/prefer-stateless-function': 'off',
     'react/function-component-definition': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
   },
 };
