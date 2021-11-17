@@ -28,6 +28,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         font-size: 16px;
+        overflow-x: hidden;
     };
     button {
         box-shadow: none;
