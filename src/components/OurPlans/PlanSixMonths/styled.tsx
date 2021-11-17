@@ -9,31 +9,61 @@ export const PlanSixMonthsContainer = styled.div`
     border-color: rgb(32, 30, 84, 18%);
     padding: 2.5rem 2rem;
 
+    @media(min-width: 998px) and (max-width: 1219px) {
+        width: 490px;
+    }
+
+    @media(max-width: 767px) {
+        width: 100%;
+        padding: 1rem 1.5rem;
+    }
+
     .plans-plansSixMonths-boxHeader {
         display: flex;
         flex-direction: column;
         margin-top: 2rem;
+
+        @media(max-width: 767px) {
+            text-align: left;
+            margin-top: 0;
+        }
+
         span { 
             font-size: 1.25rem;
             color: #3C5882;
             font-family: ${({ theme }) => { return theme.FONTS.DEFAULT; }};
             font-weight: bold;
+
+            @media(max-width: 767px) {
+                font-size: .75rem;
+            }
         }
 
         h2 { 
             font-size: 2rem;
             color: ${({ theme }) => { return theme.COLORS.PRIMARY; }};
-            font-family: ${({ theme }) => { return theme.FONTS.DEFAULT; }}
+            font-family: ${({ theme }) => { return theme.FONTS.DEFAULT; }};
+
+            @media(max-width: 767px) {
+                font-size: 1rem;
+                font-weight: bold;
+            }
         }
     }
 
     .plans-plansSixMonths-benefits {
-        margin-top: 2.75rem;
+        margin-top: 1.5rem;
+
         h4 {
             font-size: 1.25rem;
             font-family: ${({ theme }) => { return theme.FONTS.DEFAULT; }};
             color: ${({ theme }) => { return theme.COLORS.SECUNDARY; }};
             font-weight: bold;
+
+            @media(max-width: 767px) {
+                font-size: 1rem;
+                text-align: left;
+            }
         }
 
         ul {
@@ -43,16 +73,15 @@ export const PlanSixMonthsContainer = styled.div`
             flex-direction: column;
             gap: 1rem;
 
+            @media(max-width: 767px) {
+                margin-top: 1.5rem;
+                padding-left: .5rem;
+                gap: .5rem
+            }
+
             li {
                 display: flex;
                 gap: 1rem;
-
-                svg {
-                    margin-top: 8px;
-                    path {
-                        fill: ${({ theme }) => { return theme.COLORS.PRIMARY; }}
-                    }
-                }
 
                 p {
                     font-size: 1;
@@ -60,6 +89,11 @@ export const PlanSixMonthsContainer = styled.div`
                     font-weight: 400;
                     color: ${({ theme }) => { return theme.COLORS.PRIMARY; }};
                     line-height: 1.75rem;
+
+                    @media(max-width: 767px) {
+                        text-align: left;
+                        font-size: .6rem;
+                    }
                 }
             }
         }
@@ -70,14 +104,23 @@ export const PlanSixMonthsContainer = styled.div`
         display: flex;
         justify-content: space-between;
 
+        @media(max-width: 767px) {
+            margin-top: 1.5rem
+        }
+
         div {
             display: flex;
+
             span {
                 font-size: 1.25rem;
                 font-weight: 400;
                 margin-right: .5rem;
                 color: ${({ theme }) => { return theme.COLORS.SECUNDARY; }};
                 opacity: 1;
+
+                @media(max-width: 767px) {
+                    font-size: .6rem
+                }
             }
             h4 {
                 padding-top: .2rem;
@@ -91,6 +134,14 @@ export const PlanSixMonthsContainer = styled.div`
                     color: ${({ theme }) => { return theme.COLORS.PRIMARY; }};
                     text-transform: none;
                     font-weight: 600;
+                }
+
+                @media(max-width: 767px) {
+                    font-size: 1.25rem;
+
+                    span {
+                        font-size: .6rem;
+                    }
                 }
             }
         }
@@ -107,7 +158,16 @@ export const PlanSixMonthsContainer = styled.div`
             font-family: ${({ theme }) => { return theme.FONTS.DEFAULT; }};
 
             &:hover {
-                filter: brightness(0.9)
+                filter: brightness(0.9);
+
+                @media(max-width: 767px) {
+                    filter: none;
+                }
+            }
+
+            @media(max-width: 767px) {
+                padding: .8rem 1.5rem;
+                font-size: .7rem;
             }
         }
     }

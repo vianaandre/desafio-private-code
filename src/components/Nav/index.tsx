@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-scroll';
 import { NavContainer } from './styled';
 
 export const Nav: React.FC = () => {
@@ -14,24 +15,32 @@ export const Nav: React.FC = () => {
     <NavContainer>
       <ul>
         <li>
-          <a href="/" className={location === '/' ? 'active' : ''}>
-            Home
-          </a>
+          <Link to="header">
+            <a className={location === '/' ? 'active' : ''}>
+              Home
+            </a>
+          </Link>
         </li>
         <li>
-          <a href="/somos" className={location === '/somos' ? 'active' : ''}>
-            Quem somos
-          </a>
+          <Link to="methods" smooth>
+            <a className={location === '/somos' ? 'active' : ''}>
+              Quem somos
+            </a>
+          </Link>
         </li>
         <li>
-          <a href="/planos" className={location === '/planos' ? 'active' : ''}>
-            Planos
-          </a>
+          <Link to="plans" smooth offset={125}>
+            <a className={location === '/planos' ? 'active' : ''}>
+              Planos
+            </a>
+          </Link>
         </li>
         <li>
-          <a href="/fale" className={location === '/fale' ? 'active' : ''}>
-            Fale conosco
-          </a>
+          <Link to="speak" smooth>
+            <a className={location === '/fale' ? 'active' : ''}>
+              Fale conosco
+            </a>
+          </Link>
         </li>
         <li className="nav-actionEntrar">
           <a href="/entrar">

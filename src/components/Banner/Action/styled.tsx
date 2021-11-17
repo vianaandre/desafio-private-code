@@ -8,6 +8,20 @@ export const ActionContainer = styled.div`
     z-index: 1000;
     margin: auto 0;
 
+    @media(min-width: 998px) and (max-width: 1219px) {
+        width: 60%;
+    }
+
+    @media(min-width: 768px) and (max-width: 997px) {
+        width: 100%;
+        min-width: 500px
+    }
+
+    @media(max-width: 767px) {
+        width: 100%;
+        min-width: 320px;
+    }
+
 
     .bannerContaienr-content-callEnem {
         display: flex;
@@ -19,6 +33,16 @@ export const ActionContainer = styled.div`
             color: ${({ theme }) => { return theme.COLORS.SECUNDARY; }};
             font-weight: bold;
             font-family: ${({ theme }) => { return theme.FONTS.DEFAULT; }};
+
+            @media(max-width: 767px) {
+                font-size: 1rem
+            }
+        }
+
+        @media(max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
     }
 
@@ -29,9 +53,26 @@ export const ActionContainer = styled.div`
             color: ${({ theme }) => { return theme.COLORS.BRANCO; }};
             font-family: 'Fredoka One', 'Inter', sans-serif;
 
+            .bannerContaienr-content-action-mobile {
+                display: none;
+            }
+
             span {
                 font-size: 4rem;
                 color: ${({ theme }) => { return theme.COLORS.SECUNDARY; }}
+            }
+
+            @media(max-width: 767px) {
+                font-size: 2.5rem;
+                text-align: center;
+                margin-top: 3.5rem;
+
+                .bannerContaienr-content-action-mobile  {
+                    display: block;
+                    font-size: 2.5rem;
+                    color: ${({ theme }) => { return theme.COLORS.BRANCO; }};
+                    line-height: .8rem;
+                }
             }
         }
 
@@ -45,6 +86,17 @@ export const ActionContainer = styled.div`
             span {
                 font-size: 1.25rem;
                 font-weight: bold;
+            }
+
+            @media(max-width: 767px) {
+                font-size: 0.75rem;
+                text-align: center;
+                width: 100%;
+                padding: 0 1rem;
+
+                span {
+                    font-size: 0.75rem;
+                }
             }
         }
 
@@ -65,7 +117,15 @@ export const ActionContainer = styled.div`
                 cursor: pointer;
 
                 &:hover {
-                    filter: brightness(0.9)
+                    filter: brightness(0.9);
+
+                    @media(max-width: 767px) {
+                        filter: none;
+                    }
+                }
+
+                @media(max-width: 767px) {
+                    font-size: 0.8rem
                 }
             }
         }

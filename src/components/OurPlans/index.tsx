@@ -5,7 +5,7 @@ import { PlanSixMonths } from './PlanSixMonths';
 
 export const OurPlans: React.FC = () => {
   return (
-    <OurPlansContainer>
+    <OurPlansContainer id="plans">
       <span>Nossos planos</span>
       <h2>Invista no seu futuro</h2>
       <div className="ourPlans">

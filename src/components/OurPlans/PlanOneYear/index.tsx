@@ -1,6 +1,7 @@
 import React from 'react';
 import { PlanOneYearContainer } from './styled';
-import { ReactComponent as Check } from '../../../assets/check.svg';
+import Check from '../../../assets/check.svg';
+import { ReactComponent as Offer } from '../../../assets/offer.svg';
 
 export const PlanOneYear: React.FC = () => {
   return (
@@ -10,13 +11,13 @@ export const PlanOneYear: React.FC = () => {
           <span>1 ano de acesso</span>
           <h2>Plano recomendado</h2>
         </div>
-        <img src="/assets/promotion.svg" alt="" />
+        <Offer />
       </div>
       <div className="ourPlans-plansOneYear-benefits">
         <h4>vantagens</h4>
         <ul>
           <li>
-            <img src="/assets/check.svg" alt="" />
+            <img src={Check} alt="" />
             <p>
               Acesso a todos os benefícios da Plataforma
               (Videoaulas, Exercícios, Apostilas e muito mais)
@@ -24,19 +25,19 @@ export const PlanOneYear: React.FC = () => {
             </p>
           </li>
           <li>
-            <Check />
+            <img src={Check} alt="" />
             <p>36 aulas ao vivo</p>
           </li>
           <li>
-            <Check />
+            <img src={Check} alt="" />
             <p>Revisão para o ENEM</p>
           </li>
           <li>
-            <Check />
+            <img src={Check} alt="" />
             <p>Grupo no Whatsapp com professores e alunos</p>
           </li>
           <li>
-            <Check />
+            <img src={Check} alt="" />
             <p>Reforço para FUVEST, Unicamp e Vestibulares de Medicina</p>
           </li>
         </ul>

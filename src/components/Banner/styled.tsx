@@ -10,6 +10,18 @@ export const BannerContainer = styled.section`
     overflow: hidden;
     margin-bottom: 4rem;
 
+    @media(min-width: 768px) and (max-width: 997px) {
+        height: 600px;
+    }
+
+    @media(max-width: 767px) {
+        height: 700px;
+
+        img {
+            display: none;
+        }
+    }
+
     img {
         right: -250px;
         top: -400px;
@@ -24,11 +36,32 @@ export const BannerContainer = styled.section`
         display: flex;
         justify-content: space-between;
 
+        @media(min-width: 998px) and (max-width: 1219px) {
+            width: 998px;
+        }
+
+        @media(min-width: 768px) and (max-width: 997px) {
+            width: 768px;
+        }
+
+        @media(max-width: 767px) {
+            width: 320px;
+            padding: 0;
+        }
+
         .bannerContainer-content-education {
-            width: 50%;
+            width: 40%;
             z-index: 200;
             svg {
                 width: 100%;
+
+                @media(min-width: 768px) and (max-width: 997px) {
+                    display: none;
+                }
+
+                @media(max-width: 767px) {
+                    display: none;
+                }
             }
         }
 
@@ -43,6 +76,14 @@ export const BannerContainer = styled.section`
             background:#292663;
             border-radius: 124px;
             transform: rotate(-15.22deg);
+
+            @media(min-width: 768px) and (max-width: 997px) {
+                display: none;
+            }
+
+            @media(max-width: 767px) {
+                display: none;
+            }
         }
     }
 `;

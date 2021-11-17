@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { CardMethodsContainer } from './styled';
 
 type CardMethodsProps = {
@@ -11,7 +11,7 @@ export const CardMethods: React.FC<CardMethodsProps> = ({ textPrincipla, textExp
   return (
     <CardMethodsContainer>
       <div className="informationPlans-content-cardMethods-icon">
-        <img src={`/assets/${Image}`} alt="" />
+        <img src={Image} alt="" />
         <div className="informationPlans-content-cardMethods-icon-effect">
           <div />
           <div />

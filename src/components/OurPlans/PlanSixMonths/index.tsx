@@ -1,6 +1,6 @@
 import React from 'react';
 import { PlanSixMonthsContainer } from './styled';
-import { ReactComponent as Check } from '../../../assets/check.svg';
+import CheckBlue from '../../../assets/checkBlue.svg';
 
 export const PlanSixMonths: React.FC = () => {
   return (
@@ -13,33 +13,32 @@ export const PlanSixMonths: React.FC = () => {
         <h4>vantagens</h4>
         <ul>
           <li>
-            <Check />
+            <img src={CheckBlue} alt="" />
             <p>
               Acesso a todos as videoaulas
             </p>
           </li>
           <li>
-            <Check />
+            <img src={CheckBlue} alt="" />
             <p>
               Ganhe pontos resolvendo questões e troque por
               prêmios
             </p>
           </li>
           <li>
-            <Check />
+            <img src={CheckBlue} alt="" />
             <p>
               3.000 exercícios com resolucão em vídeo
             </p>
           </li>
           <li>
-            <Check />
+            <img src={CheckBlue} alt="" />
             <p>
               4 apostilas com todo o conteúdo de Matemática
             </p>
           </li>
           <li>
-            <Check />
-
+            <img src={CheckBlue} alt="" />
             <p>
               Reforço para FUVEST, Unicamp e Vestibulares de Medicina
             </p>

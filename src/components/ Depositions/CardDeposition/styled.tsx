@@ -18,6 +18,11 @@ export const CardDepositionContainer = styled.li`
         color: ${({ theme }) => { return theme.COLORS.GRAY_200; }};
         font-family: ${({ theme }) => { return theme.FONTS.DEFAULT; }};
         font-weight: 400;
+
+        @media(max-width: 767px) {
+            font-size: .75rem;
+            line-height: 1.2rem;
+        }
     }
 
     .depositions-cardDepositions-intentification {

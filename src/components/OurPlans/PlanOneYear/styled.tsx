@@ -7,23 +7,57 @@ export const PlanOneYearContainer = styled.div`
     padding: 2.5rem 2rem;
     border-radius: 18px;
 
+    @media(min-width: 998px) and (max-width: 1219px) {
+        width: 490px;
+    }
+
+    @media(max-width: 767px) {
+        width: 100%;
+        padding: 1rem 1.5rem;
+    }
+
     .ourPlans-plansOneYear-boxHeader {
         display: flex;
         align-items: center;
+
+        @media(max-width: 767px) {
+            justify-content: space-between;
+            height: 100px;
+        }
 
         div { 
             display: flex;
             flex-direction: column;
             margin-right: 2rem;
+
+            @media(max-width: 767px) {
+                margin-right: 0;
+            }
+
             span { 
                 font-size: 1.25rem;
                 font-weight: bold;
                 font-family: ${({ theme }) => { return theme.FONTS.DEFAULT; }};
-                color: #3C5882
+                color: #3C5882;
+
+                @media(max-width: 767px) {
+                    font-size: .75rem;
+                }
             }
             h2 {
                 font-size: 2rem;
-                color: #fff
+                color: #fff;
+
+                @media(max-width: 767px) {
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+            }
+        }
+        
+        @media(max-width: 767px) {
+            svg {
+                width: 80px;
             }
         }
     }
@@ -35,6 +69,10 @@ export const PlanOneYearContainer = styled.div`
             font-family: ${({ theme }) => { return theme.FONTS.DEFAULT; }};
             font-weight: bold;
             width: fit-content;
+
+            @media(max-width: 767px) {
+                font-size: 1rem;
+            }
         }
 
         ul {
@@ -45,10 +83,19 @@ export const PlanOneYearContainer = styled.div`
             gap: 1rem;
             padding-left: 1rem;
 
+            @media(max-width: 767px) {
+                margin-top: 1.5rem;
+                padding-left: .5rem
+            }
+
             li {
                 display: flex;
                 align-items: flex-start;
                 gap: 1rem;
+
+                @media(max-width: 767px) {
+                    gap: .5rem
+                }
 
                 img {
                     margin-top: 8px;
@@ -59,6 +106,12 @@ export const PlanOneYearContainer = styled.div`
                     color: #fff;
                     font-family: ${({ theme }) => { return theme.FONTS.DEFAULT; }};
                     line-height: 1.75rem;
+
+                    @media(max-width: 767px) {
+                        font-size: .6rem;
+                        line-height: 1.25rem;
+                        text-align: left;
+                    }
                 }
             }
         }
@@ -70,6 +123,10 @@ export const PlanOneYearContainer = styled.div`
         display: flex;
         justify-content: space-between;
 
+        @media(max-width: 767px) {
+            margin-top: 1.5rem
+        }
+
         .ourPlans-plansOneYear-prices-valuePlan-de {
             color: #fff;
             font-size: 1rem;
@@ -77,6 +134,11 @@ export const PlanOneYearContainer = styled.div`
             font-weight: 400;
             text-transform: none;
             margin-left: 2rem;
+
+            @media(max-width: 767px) {
+                font-size: .6rem;
+                margin-left: -1.4rem;
+            }
         }
 
         .ourPlans-plansOneYear-prices-valuePlan-value {
@@ -87,6 +149,10 @@ export const PlanOneYearContainer = styled.div`
                 margin-right: .5rem;
                 color: ${({ theme }) => { return theme.COLORS.SECUNDARY; }};
                 opacity: 1;
+
+                @media(max-width: 767px) {
+                    font-size: .6rem;
+                }
             }
             h4 {
                 padding-top: .2rem;
@@ -101,6 +167,14 @@ export const PlanOneYearContainer = styled.div`
                     opacity: 0.45;
                     text-transform: none;
                     font-weight: 600;
+
+                    @media(max-width: 767px) {
+                        font-size: .6rem;
+                    }
+                }
+
+                @media(max-width: 767px) {
+                    font-size: 1.25rem;
                 }
             }
         }
@@ -111,6 +185,10 @@ export const PlanOneYearContainer = styled.div`
             opacity: 0.45;
             text-transform: none;
             font-weight: 400;
+
+            @media(max-width: 767px) {
+                font-size: .6rem
+            }
         }
 
         a {
@@ -126,7 +204,16 @@ export const PlanOneYearContainer = styled.div`
             font-family: ${({ theme }) => { return theme.FONTS.DEFAULT; }};
 
             &:hover {
-                filter: brightness(0.9)
+                filter: brightness(0.9);
+
+                @media(max-width: 767px) {
+                    filter: none;
+                }
+            }
+
+            @media(max-width: 767px) {
+                padding: .8rem 1.5rem;
+                font-size: .7rem;
             }
         }
     }

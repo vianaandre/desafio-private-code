@@ -15,6 +15,7 @@ export const Action: React.FC = () => {
       </div>
       <div className="bannerContaienr-content-action">
         <h2>
+          <span className="bannerContaienr-content-action-mobile">Você escolhe</span>
           o que aprender
           <span>.</span>
         </h2>

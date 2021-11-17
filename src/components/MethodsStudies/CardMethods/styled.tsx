@@ -5,6 +5,16 @@ export const CardMethodsContainer = styled.div`
     display: flex;
     width: 45%;
 
+    @media(min-width: 768px) and (max-width: 997px) {
+        width: 100%;
+    }
+
+    @media(max-width: 767px)  {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
     .informationPlans-content-cardMethods-icon {
         display: flex;
         flex-direction: column;
@@ -22,6 +32,10 @@ export const CardMethodsContainer = styled.div`
             flex-direction: column;
             gap: 6px;
             margin-top: 1rem;
+
+            @media(max-width: 767px) {
+                display: none;
+            }
 
             div {
                 width: 5px;
@@ -58,6 +72,12 @@ export const CardMethodsContainer = styled.div`
 
     .informationPlans-content-cardMethods-explication {
         margin-left: 2rem;
+
+        @media(max-width: 767px) {
+            margin-left: 0;
+            margin-top: 1rem;
+        }
+
         h3 {
             font-size: 1.25rem;
             color: ${({ theme }) => { return theme.COLORS.PRIMARY; }};
@@ -69,7 +89,11 @@ export const CardMethodsContainer = styled.div`
             margin-top: 1rem;
             font-size: 1.25rem;
             color: ${({ theme }) => { return theme.COLORS.GRAY_200; }};
-            font-family: ${({ theme }) => { return theme.FONTS.DEFAULT; }}
+            font-family: ${({ theme }) => { return theme.FONTS.DEFAULT; }};
+
+             @media(max-width: 767px) {
+                font-size: .75rem;
+            }
         }
     }
 
