@@ -42,5 +42,6 @@ module.exports = {
     'react/prefer-stateless-function': 'off',
     'react/function-component-definition': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
+    'react/no-unstable-nested-components': 'off',
   },
 };
