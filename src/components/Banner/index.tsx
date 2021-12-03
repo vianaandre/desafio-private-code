@@ -1,20 +1,22 @@
 import React from 'react';
+import SVG from 'react-inlinesvg';
 import { BannerContainer } from './styled';
 import { Action } from './Action';
 import imageBackground from '../../assets/image-background.png';
-import { ReactComponent as Education } from '../../assets/education.svg';
+import education from '../../assets/education.png';
+import { Container } from '../../styles/container';
 
 export const Banner: React.FC = () => {
   return (
     <BannerContainer>
-      <div className="bannerContainer-content">
-        <Action />
-        <div className="bannerContainer-content-education">
-          <Education />
+      <Container>
+        <div className="bannerContainer-content">
+          <Action />
+          <img src={education} alt="" />
+          <div className="bannerContainer-boxTransparent" />
         </div>
-        <div className="bannerContainer-boxTransparent" />
-      </div>
-      <img src={imageBackground} alt="" />
+      </Container>
+      <img src={imageBackground} alt="" className="bannerContainer-img-background" />
     </BannerContainer>
   );
 };

@@ -4,7 +4,7 @@ export const ActionMobileContainer = styled.section`
 
     width: 100%;
     background-color: ${({ theme }) => { return theme.COLORS.PRIMARY; }};
-    margin-top: 9rem;
+    margin-top: 150px;
     margin-bottom: 4rem;
 
     @media(max-width: 767px) {

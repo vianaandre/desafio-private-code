@@ -52,99 +52,59 @@ export const DepositionsContainer = styled.section`
         }
     }
 
-    .depositions-carousel {
-        width: 100%;
+`;
+
+export const CarouselDepostions = styled.div`
+
+    width: 1220px;
+    margin: 0 auto;
+    margin-top: 70px;
+    position: relative;
+
+    button {
+        position: absolute;
+        top: calc(50% - 25px);
+        padding: 17px 20px;
+        border-radius: 50%;
+    }
+
+    button.prev {
+        left: -50px;
+    }
+
+    button.next {
+        position: absolute;
+        right: -50px;
+
+        svg {
+            transform: rotate(-180deg);
+        }
+    }
+
+
+    div.swiper-slide {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        padding: 10px 10px;
+    }
 
-        .depositions-carousel-items {
-            width: 1220px;
-            margin: 0 auto;
-            overflow: hidden;
-            overflow-y: hidden;
-            scroll-behavior: smooth;
+    div.swiper-container  {    
+        overflow: visible;
 
-            @media(min-width: 998px) and (max-width: 1219px) {
-                width: 998px
-            }
-
-            @media(max-width: 767px) {
-                width: 320px;
-                margin: 0 20px;
-            }
-
-
-            ul {
-                padding: 0 10px;
-                margin-top: 4rem;
-                margin-bottom: 4rem;
-                display: flex;
-                justify-content: space-between;
-                gap: 40px;
-                width: fit-content;
-
-                @media(min-width: 998px) and (max-width: 1219px) {
-                    gap: 20px;
-                }
-
-                @media(min-width: 768px) and (max-width: 997px) {
-                    padding-left: 20px;
-                    padding-right: 15px;
-                }
-
-                @media(max-width: 767px) {
-                    gap: 10px;
-                    padding: 5px;
-                }
-
-                li {
-                    width: 370px;
-
-                    @media(min-width: 998px) and (max-width: 1219px) {
-                        width: 300px;
-                    }
-
-                    @media(max-width: 767px) {
-                        width: 310px;
-                    }
-                }
-
-                li:nth-child(3) {
-                    margin-right: 40px;
-
-                    @media(min-width: 768px) and (max-width: 997px) {
-                        margin-right: 10px;
-                    }
-                }
-
-                @media(min-width: 768px) and (max-width: 997px) {
-                    li:nth-child(5), li:nth-child(6) {
-                        display: none;
-                    }
-                }
-            }
+        .swiper-button-prev {
+            display: block;
+            margin-left: -50px;
+            opacity: 0;
         }
 
-        button {
-            padding: 1rem 1.25rem;
-            height: fit-content;
-            border-radius: 50%;
-            border: 1px solid;
-            border-color: ${({ theme }) => { return theme.COLORS.PRIMARY; }};
-            margin: auto 0;
-            cursor: pointer;
+        .swiper-button-next {
+            display: block;
+            margin-right: -50px;
+            opacity: 0;
         }
 
-        .left {
-            margin-left: 20px;
-        }
-
-        .right {
-            margin-right: 20px;
-
-            svg {
-                transform: rotate(180deg);
-            }
+        div.swiper-pagination {
+            margin-bottom: -40px
         }
     }
 

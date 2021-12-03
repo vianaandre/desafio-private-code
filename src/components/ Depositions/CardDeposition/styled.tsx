@@ -6,6 +6,7 @@ export const CardDepositionContainer = styled.li`
     background-color: ${({ theme }) => { return theme.COLORS.BRANCO; }};
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.22);
     border-radius: 18px;
+    width: 370px;
 
     .depositions-cardDepositions-stars {
         display: flex;

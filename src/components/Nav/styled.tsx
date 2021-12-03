@@ -9,19 +9,6 @@ export const NavContainer = styled.nav`
         @media(min-width: 768px) and (max-width: 997px) {
             width: 500px;
         }
-        
-        @media(max-width: 767px) {
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            gap: 2rem;
-            position: fixed;
-            top: 0;
-            width: 320px;
-            height: 100vh;
-            background-color: ${({ theme }) => { return theme.COLORS.BRANCO; }};
-            padding: 7rem 0;
-        }
 
         li {
             cursor: pointer;
@@ -33,6 +20,10 @@ export const NavContainer = styled.nav`
 
                 &:hover {
                     color: ${({ theme }) => { return theme.COLORS.PRIMARY; }};
+
+                    @media(max-width: 767px) {
+                        color: ${({ theme }) => { return theme.COLORS.GRAY_200; }}
+                    }
                 }
             }
 
@@ -50,7 +41,12 @@ export const NavContainer = styled.nav`
 
                     &:hover {
                         color: ${({ theme }) => { return theme.COLORS.BRANCO; }};
-                        filter: brightness(0.9)
+                        filter: brightness(0.9);
+
+                        @media(max-width: 767px) {
+                            color: ${({ theme }) => { return theme.COLORS.BRANCO; }};
+                            filter: brightness(1)
+                        }
                     }
                 }
 

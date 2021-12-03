@@ -5,21 +5,10 @@ export const MethodsStudiesContainer = styled.section`
     width: 100%;
     position: relative;
     margin-top: 4rem;
+    display: flex;
 
-    img.methodsStudies-student {
-        position: absolute;
-        right: 0;
-        top: 0;
-
-        @media(min-width: 998px) and (max-width: 1219px) {
-            width: 570px;
-        }
-
-        @media(min-width: 768px) and (max-width: 997px) {
-            display: none;
-        }
-
-        @media(max-width: 767px) {
+    div.swiper-container {
+        div.swiper-pagination {
             display: none;
         }
     }
@@ -79,4 +68,28 @@ export const MethodsStudiesContainer = styled.section`
             }
         }
     }
+`;
+
+export const CarouselImageMethodStudies = styled.div`
+
+    cursor: pointer;
+    height: 738px;
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    right: 0;
+
+    img {
+        width: 691px;
+        background-size: cover;
+    }
+
+    div.swiper-wrapper {
+        transition-duration: 0.4s;
+    } 
+
+    @media(max-width: 767px) {
+        display: none;
+    }
+
 `;

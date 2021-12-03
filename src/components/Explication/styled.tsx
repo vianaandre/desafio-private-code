@@ -6,27 +6,10 @@ export const ExplicationContainer = styled.section`
     background-color: ${({ theme }) => { return theme.COLORS.GRAY_100; }};
 
     .explication-content {
-        width: 1220px;
-        margin: 0 auto;
-        padding: 5rem 0;
         display: flex;
         flex-direction: column;
         gap: 2rem;
-
-        @media(min-width: 998px) and (max-width: 1219px) {
-            width: 998px;
-            padding-bottom: 3rem;
-        }
-
-        @media(min-width: 768px) and (max-width: 997px) {
-            width: 768px;
-            padding-bottom: 1rem;
-        }
-
-        @media(max-width: 767px) {
-            width: 767px;
-            padding: 3rem 0;
-        }
+        padding: 56px 10px;
 
         .explication-content-block {
             display: flex;

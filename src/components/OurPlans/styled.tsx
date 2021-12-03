@@ -38,7 +38,7 @@ export const OurPlansContainer = styled.section`
     span {
         font-size: 1.25rem;
         font-family: ${({ theme }) => { return theme.FONTS.DEFAULT; }};
-        color: ${({ theme }) => { return theme.COLORS.SECUNDARY; }};
+        color: #32B5FF;
         font-weight: bold;
         text-transform: uppercase;
     }

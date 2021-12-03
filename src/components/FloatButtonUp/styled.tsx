@@ -9,6 +9,7 @@ export const FloatButtonUpContainer = styled.button`
     padding: 1rem;
     background-color: ${({ theme }) => { return theme.COLORS.PRIMARY; }};
     border-radius: 50%;
+    z-index: 1000;
 
     &:hover {
         filter: brightness(0.9)

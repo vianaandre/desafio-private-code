@@ -3,65 +3,37 @@ import styled from 'styled-components';
 export const BannerContainer = styled.section`
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 821px;
     display: flex;
     align-items: center;
     background-color: ${({ theme }) => { return theme.COLORS.PRIMARY; }};
     overflow: hidden;
     margin-bottom: 4rem;
 
-    @media(min-width: 768px) and (max-width: 997px) {
-        height: 600px;
-    }
-
-    @media(max-width: 767px) {
-        height: 700px;
-
-        img {
-            display: none;
-        }
-    }
-
-    img {
-        right: -250px;
-        top: -400px;
+    img.bannerContainer-img-background {
+        right: -120px;
+        top: -200px;
+        z-index: 150;
         position: absolute;
     }
 
     .bannerContainer-content {
-        position: relative;
-        width: 1220px;
-        margin: 0 auto;
-        padding: 0 3.5rem;
+        padding-left: 40px;
+        padding-right: 0;
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
-        @media(min-width: 998px) and (max-width: 1219px) {
-            width: 998px;
+        @media(min-width: 768px) and (max-width: 997px)  {
+            padding-left: 10px;
         }
 
-        @media(min-width: 768px) and (max-width: 997px) {
-            width: 768px;
-        }
-
-        @media(max-width: 767px) {
-            width: 320px;
-            padding: 0;
-        }
-
-        .bannerContainer-content-education {
-            width: 40%;
+        img {
             z-index: 200;
-            svg {
-                width: 100%;
+            margin-right: 10px;
 
-                @media(min-width: 768px) and (max-width: 997px) {
-                    display: none;
-                }
-
-                @media(max-width: 767px) {
-                    display: none;
-                }
+            @media(min-width: 768px) and (max-width: 997px) {
+                display: none;
             }
         }
 
@@ -77,11 +49,7 @@ export const BannerContainer = styled.section`
             border-radius: 124px;
             transform: rotate(-15.22deg);
 
-            @media(min-width: 768px) and (max-width: 997px) {
-                display: none;
-            }
-
-            @media(max-width: 767px) {
+            @media(min-width: 768px) and (max-width: 997px)  {
                 display: none;
             }
         }

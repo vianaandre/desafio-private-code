@@ -1,14 +1,14 @@
 import React from 'react';
+import SVG from 'react-inlinesvg';
 import { ActionContainer } from './styled';
-
-import { ReactComponent as Robo } from '../../../assets/robo.svg';
-import { ReactComponent as Arrow } from '../../../assets/arrow.svg';
+import robo from '../../../assets/robo.svg';
+import arrow from '../../../assets/arrow.svg';
 
 export const Action: React.FC = () => {
   return (
     <ActionContainer>
       <div className="bannerContaienr-content-callEnem">
-        <Robo />
+        <SVG src={robo} />
         <p>
           Seja aprovado no Enem e Vestibulares :)
         </p>
@@ -28,7 +28,7 @@ export const Action: React.FC = () => {
         <button type="button">
           <a href="#planos">
             Veja nossos planos
-            <Arrow />
+            <SVG src={arrow} />
           </a>
         </button>
       </div>

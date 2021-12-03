@@ -6,6 +6,10 @@ export const DepartmentsContainer = styled.section`
     margin: 0 auto;
     overflow: hidden;
 
+    img {
+        margin-left: -40px;
+    }
+
     @media(min-width: 998px) and (max-width: 1219px) {
         width: 998px
     }

@@ -8,6 +8,9 @@ export const PlanSixMonthsContainer = styled.div`
     border: solid 1px;
     border-color: rgb(32, 30, 84, 18%);
     padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     @media(min-width: 998px) and (max-width: 1219px) {
         width: 490px;

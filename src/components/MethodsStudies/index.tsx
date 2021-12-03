@@ -1,11 +1,19 @@
 import React from 'react';
-import { MethodsStudiesContainer } from './styled';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, {
+  Mousewheel, Pagination,
+} from 'swiper';
+import { MethodsStudiesContainer, CarouselImageMethodStudies } from './styled';
 import { CardMethods } from './CardMethods';
 import Student from '../../assets/aluna.jpg';
 import { ReactComponent as Arrow } from '../../assets/arrow.svg';
 import Raiz from '../../assets/raiz.svg';
 import Follow from '../../assets/follow.svg';
 import Mathemaics from '../../assets/case_mathematics.svg';
+import happy from '../../assets/studio-happy.png';
+
+// install Swiper modules
+SwiperCore.use([Mousewheel, Pagination]);
 
 export const MethodsStudies: React.FC = () => {
   return (
@@ -19,7 +27,25 @@ export const MethodsStudies: React.FC = () => {
           <Arrow />
         </a>
       </div>
-      <img src={Student} alt="" className="methodsStudies-student" />
+      <CarouselImageMethodStudies className="carousel">
+        <Swiper
+          direction="vertical"
+          slidesPerView={1}
+          spaceBetween={30}
+          mousewheel
+          pagination={{
+            clickable: true,
+          }}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <img src={Student} alt="" className="methodsStudies-student" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={happy} alt="" />
+          </SwiperSlide>
+        </Swiper>
+      </CarouselImageMethodStudies>
     </MethodsStudiesContainer>
   );
 };
