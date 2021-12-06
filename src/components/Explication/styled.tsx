@@ -124,6 +124,11 @@ export const ExplicationContainer = styled.section`
                     margin-top: 100px
                 }
 
+                @media(max-width: 767px) {
+                    margin-top: 100px;
+                    margin-bottom: 20px;
+                }
+
                 img {
                     margin-top: -10rem;
                 }
