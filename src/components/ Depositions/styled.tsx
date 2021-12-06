@@ -27,6 +27,7 @@ export const DepositionsContainer = styled.section`
             font-weight: bold;
             font-family: ${({ theme }) => { return theme.FONTS.DEFAULT; }};
             text-transform: uppercase;
+            color: #32B5FF;
         }
 
         h2 {
@@ -56,7 +57,7 @@ export const DepositionsContainer = styled.section`
 
 export const CarouselDepostions = styled.div`
 
-    width: 1220px;
+    width: 1140px;
     margin: 0 auto;
     margin-top: 70px;
     position: relative;
@@ -128,15 +129,17 @@ export const CarouselDepostions = styled.div`
     }
 
     button.prev {
-        left: -50px;
+        left: -60px;
 
         @media(max-width: 1199px) and (min-width: 992px) {
-            left: -30px;
-            z-index: 0
+            z-index: 0;
+            top: 300px;
+            left: 10px;
         }
 
         @media(max-width: 991px) and (min-width: 768px) {
-            left: 0;
+            left: 40px;
+            top: 270px
         }
 
         @media(max-width: 767px) {
@@ -146,19 +149,21 @@ export const CarouselDepostions = styled.div`
 
     button.next {
         position: absolute;
-        right: -50px;
+        right: -60px;
 
         svg {
             transform: rotate(-180deg);
         }
 
         @media(max-width: 1199px) and (min-width: 992px) {
-            right: -30px;
-            z-index: 0
+            z-index: 0;
+            top: 300px;
+            right: 10px;
         }
 
         @media(max-width: 991px) and (min-width: 768px) {
-            right: 0;
+            right: 40px;
+            top: 270px;
         }
 
         @media(max-width: 767px) {
@@ -170,17 +175,17 @@ export const CarouselDepostions = styled.div`
     div.swiper-slide {
         display: flex;
         justify-content: space-between;
-        padding: 20px 10px;
+        padding: 20px 5px;
 
 
         @media(max-width: 1199px) and (min-width: 992px) {
             justify-content: space-around;
-            padding: 20px 20px;
+            padding: 20px 0;
         } 
 
         @media(max-width: 991px) and (min-width: 768px) {
             justify-content: space-around;
-            padding: 0 40px;
+            padding: 10px 20px;
         }
     }
 
@@ -189,18 +194,21 @@ export const CarouselDepostions = styled.div`
 
         .swiper-button-prev {
             display: block;
-            margin-left: -50px;
+            margin-left: -60px;
             opacity: 0;
             z-index: 40000;
 
             @media(max-width: 1199px) and (min-width: 992px) {
-                margin-left: -30px;
                 opacity: 0;
-                z-index: 10000
+                z-index: 10000;
+                margin-top: 150px;
+                margin-left: 10px;
             }
 
             @media(max-width: 991px) and (min-width: 768px) {
-                margin-left: 0;
+                margin-left: 40px;
+                opacity: 0;
+                margin-top: 140px;
             }
 
             @media(max-width: 767px) {
@@ -212,18 +220,21 @@ export const CarouselDepostions = styled.div`
 
         .swiper-button-next {
             display: block;
-            margin-right: -50px;
+            margin-right: -60px;
             opacity: 0;
             z-index: 40000;
 
             @media(max-width: 1199px) and (min-width: 992px) {
-                margin-right: -30px;
                 z-index: 40000;
                 opacity: 0;
+                margin-top: 150px;
+                margin-right: 10px;
             }
 
             @media(max-width: 991px) and (min-width: 768px) {
-                margin-right: 0;
+                margin-right: 40px;
+                opacity: 0;
+                margin-top: 140px;
             }
 
             @media(max-width: 767px) {

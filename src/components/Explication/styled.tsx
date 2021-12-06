@@ -61,6 +61,7 @@ export const ExplicationContainer = styled.section`
                     color: ${({ theme }) => { return theme.COLORS.SECUNDARY; }};
                     font-family: ${({ theme }) => { return theme.FONTS.DEFAULT; }};
                     font-weight: bold;
+                    color: #32B5FF
                 }
 
                 h2 {
@@ -110,6 +111,10 @@ export const ExplicationContainer = styled.section`
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+
+                img {
+                    margin-top: -10rem;
+                }
                 
                 div {
                     order: 2;

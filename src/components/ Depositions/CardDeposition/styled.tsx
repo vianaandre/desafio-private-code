@@ -9,7 +9,7 @@ export const CardDepositionContainer = styled.li`
     width: 370px;
 
     @media(max-width: 1199px) and (min-width: 992px) {
-        width: 310px
+        width: 300px
     }
 
     @media(max-width: 991px) and (min-width: 768px) {

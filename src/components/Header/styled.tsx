@@ -117,7 +117,7 @@ export const HeaderContainer = styled.header<{
 
             ul {
                 width: 100%;
-                padding: 100px;
+                padding: 120px;
                 height: 100vh;
                 background-color: ${({ theme }) => { return theme.COLORS.BRANCO; }};
                 flex-direction: column;

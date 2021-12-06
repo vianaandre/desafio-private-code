@@ -19,8 +19,8 @@ export const Explcation: React.FC = () => {
           </div>
           <div className="explication-content-block">
             <div>
-              <span>100% MATEMÁTICA</span>
-              <h2>Matemática para quem quer entrar na facul.</h2>
+              <span>QUER SER APR OVADO?</span>
+              <h2>Se seu foco é ser aprovado, nós estamos aqui por você.</h2>
               <p>Somos um cursinho online especialista em ensinar matemática. Temos os melhores professores mestres e doutores para tirar suas dúvidas e te ensinar matemática desde a teoria até a resolução de exercícios de todos os níveis.</p>
             </div>
             <div className="explication-content-img-shadow">
