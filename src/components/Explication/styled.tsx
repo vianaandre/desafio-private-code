@@ -11,6 +11,10 @@ export const ExplicationContainer = styled.section`
         gap: 2rem;
         padding: 77px 10px;
 
+        @media(max-width: 991px) and (min-width: 768px) {
+            padding-bottom: 30px;
+        }
+
         @media(max-width: 767px) {
             padding: 0 10px;
             padding-top: 56px;
@@ -111,6 +115,14 @@ export const ExplicationContainer = styled.section`
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+
+                @media(max-width: 1199px) and (min-width: 992px) {
+                    margin-top: 70px;
+                }
+
+                @media(max-width: 991px) and (min-width: 768px) {
+                    margin-top: 100px
+                }
 
                 img {
                     margin-top: -10rem;
