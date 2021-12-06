@@ -6,6 +6,8 @@ export const FooterContainer = styled.footer`
     margin: 0 auto;
     padding: 5rem 0 3rem 0;
 
+    margin-bottom: 30px;
+
     @media(min-width: 998px) and (max-width: 1219px) {
         width: 998px;
     }
@@ -49,11 +51,15 @@ export const FooterContainer = styled.footer`
         .footer-information-app {
             display: flex;
             flex-direction: column;
+            justify-content: flex-start;
+
+            @media(max-width: 767px) {
+                align-items: center;
+            }
 
             svg {
                 width: 200px;
-                margin-top: -1rem;
-                margin: 0 auto; 
+                margin-top: 0;
             }
 
             img {

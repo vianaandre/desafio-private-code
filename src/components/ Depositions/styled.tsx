@@ -61,15 +61,87 @@ export const CarouselDepostions = styled.div`
     margin-top: 70px;
     position: relative;
 
+    .carouselMobile {
+        display: none;
+    }
+
+    .carouselTablet {
+
+        div.swiper-container {
+            display: none;
+        }
+
+    }
+
+    @media(max-width: 1199px) and (min-width: 992px) {
+        width: 992px;
+    } 
+
+    @media(max-width: 991px) and (min-width: 768px) {
+        width: 768px;
+
+        .carouselDesktop {
+            display: none;
+
+            div.swiper-container {
+                display: none;
+            }
+        }
+
+        .carouselTablet {
+            div.swiper-container {
+                display: block;
+            }
+        }
+    }
+
+    .carouselDesktop {
+        display: block;
+    }
+
+    @media(max-width: 767px) {
+        width: 320px;
+
+        .carouselDesktop {
+            display: none;
+        }
+
+        .carouselMobile {
+            display: block;
+            width: 320px;
+        }
+
+    }
+
     button {
         position: absolute;
         top: calc(50% - 25px);
         padding: 17px 20px;
         border-radius: 50%;
+        background: transparent;
+        border: solid 1px;
+        border-color: #252160;
+
+        @media(max-width: 767px) {
+            top: 260px;
+        }
     }
 
     button.prev {
         left: -50px;
+
+        @media(max-width: 1199px) and (min-width: 992px) {
+            left: -30px;
+            z-index: 0
+        }
+
+        @media(max-width: 991px) and (min-width: 768px) {
+            left: 0;
+        }
+
+        @media(max-width: 767px) {
+            left: calc(50% - 52px)
+        }
     }
 
     button.next {
@@ -79,13 +151,37 @@ export const CarouselDepostions = styled.div`
         svg {
             transform: rotate(-180deg);
         }
+
+        @media(max-width: 1199px) and (min-width: 992px) {
+            right: -30px;
+            z-index: 0
+        }
+
+        @media(max-width: 991px) and (min-width: 768px) {
+            right: 0;
+        }
+
+        @media(max-width: 767px) {
+            right: calc(50% - 52px);
+        }
     }
 
 
     div.swiper-slide {
         display: flex;
         justify-content: space-between;
-        padding: 10px 10px;
+        padding: 20px 10px;
+
+
+        @media(max-width: 1199px) and (min-width: 992px) {
+            justify-content: space-around;
+            padding: 20px 20px;
+        } 
+
+        @media(max-width: 991px) and (min-width: 768px) {
+            justify-content: space-around;
+            padding: 0 40px;
+        }
     }
 
     div.swiper-container  {    
@@ -95,16 +191,54 @@ export const CarouselDepostions = styled.div`
             display: block;
             margin-left: -50px;
             opacity: 0;
+            z-index: 40000;
+
+            @media(max-width: 1199px) and (min-width: 992px) {
+                margin-left: -30px;
+                opacity: 0;
+                z-index: 10000
+            }
+
+            @media(max-width: 991px) and (min-width: 768px) {
+                margin-left: 0;
+            }
+
+            @media(max-width: 767px) {
+                opacity: 0;
+                margin-left: 110px;
+                margin-top: 134px;
+            }
         }
 
         .swiper-button-next {
             display: block;
             margin-right: -50px;
             opacity: 0;
+            z-index: 40000;
+
+            @media(max-width: 1199px) and (min-width: 992px) {
+                margin-right: -30px;
+                z-index: 40000;
+                opacity: 0;
+            }
+
+            @media(max-width: 991px) and (min-width: 768px) {
+                margin-right: 0;
+            }
+
+            @media(max-width: 767px) {
+                opacity: 0;
+                margin-right: 110px;
+                margin-top: 134px;
+            }
         }
 
         div.swiper-pagination {
-            margin-bottom: -40px
+            margin-bottom: -40px;
+
+            @media(max-width: 767px) {
+                display: none;
+            }
         }
     }
 

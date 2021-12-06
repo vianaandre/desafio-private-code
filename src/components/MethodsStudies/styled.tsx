@@ -79,9 +79,23 @@ export const CarouselImageMethodStudies = styled.div`
     position: absolute;
     right: 0;
 
+    @media(max-width: 1199px) and (min-width: 992px) {
+        height: 540px;
+
+        top: 30px
+    }
+
+    @media(max-width: 991px) and (min-width: 768px) {
+        display: none;
+    }
+
     img {
         width: 691px;
         background-size: cover;
+
+        @media(max-width: 1199px) and (min-width: 992px) {
+            width: 500px;
+        }
     }
 
     div.swiper-wrapper {

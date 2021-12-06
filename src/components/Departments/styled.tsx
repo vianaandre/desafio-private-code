@@ -10,8 +10,23 @@ export const DepartmentsContainer = styled.section`
         margin-left: -40px;
     }
 
-    @media(min-width: 998px) and (max-width: 1219px) {
-        width: 998px
+    @media(max-width: 1199px) {
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            background-color: #f1f1f1;
+            height: 10px;
+            border-radius: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #DEDEDE;
+            border-radius: 5px;
+        }
+    }
+
+    @media(max-width: 1199px) and (min-width: 992px) {
+        width: 992px;
     }
 
     @media(min-width: 768px) and (max-width: 997px) {

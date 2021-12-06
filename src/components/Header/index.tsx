@@ -3,6 +3,7 @@ import { HeaderContainer } from './styled';
 import { ReactComponent as Logo } from '../../assets/logoipsum.svg';
 import { Nav } from '../Nav';
 import { Container } from '../../styles/container';
+import { NavMobile } from '../NavMobile';
 
 export const Header: React.FC = () => {
   const [menuActive, setMenuActive] = useState<boolean>(false);
@@ -38,7 +39,7 @@ export const Header: React.FC = () => {
             <div className={menuActive ? 'activeMidlle' : ''} />
             <div className={menuActive ? 'activeBottom' : ''} />
           </div>
-          <Nav />
+          <NavMobile menuActive={menuActive} setActive={setMenuActive} />
         </div>
       </HeaderContainer>
     </Container>

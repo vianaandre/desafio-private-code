@@ -15,6 +15,15 @@ export const BannerContainer = styled.section`
         top: -200px;
         z-index: 150;
         position: absolute;
+
+        @media(max-width: 767px) {
+            display: none
+        }
+
+        @media(max-width: 1199px) and (min-width: 992px) {
+            right: -300px;
+            top: -150px
+        }
     }
 
     .bannerContainer-content {
@@ -24,15 +33,24 @@ export const BannerContainer = styled.section`
         justify-content: space-between;
         align-items: center;
 
-        @media(min-width: 768px) and (max-width: 997px)  {
-            padding-left: 10px;
+        @media(max-width: 767px) {
+            padding-left: 0;
         }
 
         img {
             z-index: 200;
             margin-right: 10px;
 
+            @media(max-width: 1199px) and (min-width: 992px) {
+                width: 600px;
+                margin-right: 0;
+            }
+
             @media(min-width: 768px) and (max-width: 997px) {
+                display: none;
+            }
+
+            @media(max-width: 767px) {
                 display: none;
             }
         }
@@ -51,6 +69,10 @@ export const BannerContainer = styled.section`
 
             @media(min-width: 768px) and (max-width: 997px)  {
                 display: none;
+            }
+
+            @media(max-width: 767px) {
+                display: none
             }
         }
     }

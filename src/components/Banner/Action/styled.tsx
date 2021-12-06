@@ -8,11 +8,11 @@ export const ActionContainer = styled.div`
     z-index: 1000;
     margin: auto 0;
 
-    @media(min-width: 998px) and (max-width: 1219px) {
-        width: 60%;
+    @media(max-width: 1199px) and (min-width: 992px)  {
+        min-width: 500px
     }
 
-    @media(min-width: 768px) and (max-width: 997px) {
+    @media(max-width: 991px) and (min-width: 768px) {
         width: 100%;
         min-width: 500px
     }
@@ -48,6 +48,11 @@ export const ActionContainer = styled.div`
 
     .bannerContaienr-content-action {
         margin-top: 2rem;
+
+        @media(max-width: 767px) {
+            text-align: center
+        }
+
         h2 {
             font-size: 4rem;
             color: ${({ theme }) => { return theme.COLORS.BRANCO; }};
@@ -89,19 +94,32 @@ export const ActionContainer = styled.div`
             }
 
             @media(max-width: 767px) {
-                font-size: 0.75rem;
+                font-size: 1rem;
                 text-align: center;
                 width: 100%;
                 padding: 0 1rem;
 
                 span {
-                    font-size: 0.75rem;
+                    font-size: 1rem;
+
+                    @media(max-width: 566px) {
+                        font-size: 0.75rem;
+                    }
                 }
+            }
+
+            @media(max-width: 566px) {
+                font-size: 0.75rem;
             }
         }
 
         button {
             background: none;
+
+            @media(max-width: 767px) {
+                margin-top: 92px;
+            }
+
             a {
                 margin-top: 2rem;
                 padding: 1rem 5rem;
@@ -125,7 +143,11 @@ export const ActionContainer = styled.div`
                 }
 
                 @media(max-width: 767px) {
-                    font-size: 0.8rem
+                    font-size: 1rem;
+
+                    @media(max-width: 566px) {
+                        font-size: 0.75rem;
+                    }
                 }
             }
         }

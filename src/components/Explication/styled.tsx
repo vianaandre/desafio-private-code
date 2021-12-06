@@ -9,7 +9,12 @@ export const ExplicationContainer = styled.section`
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        padding: 56px 10px;
+        padding: 77px 10px;
+
+        @media(max-width: 767px) {
+            padding: 0 10px;
+            padding-top: 56px;
+        }
 
         .explication-content-block {
             display: flex;
@@ -98,6 +103,26 @@ export const ExplicationContainer = styled.section`
 
                 @media(max-width: 767px) {
                     margin-top: -2rem;
+                }
+            }
+
+            div.explication-content-img-shadow {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                div {
+                    order: 2;
+                    width: 229px;
+                    height: 14px;
+                    border-radius: 50%;
+
+                    background: rgba(196, 196, 196, 0.25);
+                    transform: rotate(-3.05deg);
+
+                    @media(max-width: 767px) {
+                        display: none;
+                    }
                 }
             }
         }
