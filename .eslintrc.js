@@ -45,5 +45,6 @@ module.exports = {
     'react/no-unstable-nested-components': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
     'jsx-a11y/no-static-element-interactions': 'off',
+    'react/require-default-props': 'off',
   },
 };
