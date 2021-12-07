@@ -5,6 +5,7 @@ export const Container = styled.section`
     width: 1200px;
     margin: 0 auto;
     position: relative;
+    padding: 0 20px;
 
     @media(max-width: 1199px) and (min-width: 992px) {
         width: 992px;
@@ -20,6 +21,7 @@ export const Container = styled.section`
 
     @media(max-width: 566px) {
         width: 320px;
+        padding: 0;
     }
 
 `;
