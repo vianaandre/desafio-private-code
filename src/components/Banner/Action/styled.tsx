@@ -14,19 +14,25 @@ export const ActionContainer = styled.div`
 
     @media(max-width: 991px) and (min-width: 768px) {
         width: 100%;
-        min-width: 500px
+        min-width: 500px;
+        text-align: center
     }
 
     @media(max-width: 767px) {
-        width: 100%;
-        min-width: 320px;
+        width: 320px;
+        min-width: 300px;
     }
 
 
     .bannerContaienr-content-callEnem {
         display: flex;
         align-items: flex-end;
-        gap: 1.25rem;  
+        gap: 1.25rem;
+
+        @media(max-width: 991px) and (min-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
 
         p {
             font-size: 1.25rem;
@@ -93,6 +99,10 @@ export const ActionContainer = styled.div`
                 font-weight: bold;
             }
 
+            @media(max-width: 991px) and (min-width: 768px) {
+                margin: 32px auto;
+            }
+
             @media(max-width: 767px) {
                 font-size: 1rem;
                 text-align: center;
@@ -117,6 +127,10 @@ export const ActionContainer = styled.div`
             background: none;
 
             @media(max-width: 767px) {
+                margin-top: 92px;
+            }
+
+            @media(max-width: 991px) and (min-width: 768px) {
                 margin-top: 92px;
             }
 

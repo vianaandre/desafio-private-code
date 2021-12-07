@@ -3,21 +3,14 @@ import styled from 'styled-components';
 export const DepositionsContainer = styled.section`
 
     .depositions-title {
-        width: 1220px;
-        margin: 0 auto;
         overflow: visible;
         position: relative;
 
-        @media(min-width: 998px) and (max-width: 1219px) {
-            width: 998px;
-        }
-
-        @media(min-width: 768px) and (max-width: 997px) {
-            width: 768px;
+        @media(max-width: 991px) and (min-width: 768px) {
+            text-align: center;
         }
 
         @media(max-width: 767px) {
-            width: 320px;
             text-align: center;
         }
 
@@ -44,6 +37,7 @@ export const DepositionsContainer = styled.section`
 
             @media(min-width: 768px) and (max-width: 997px) {
                 width: 100%;
+                font-size: 24px
             }
 
             @media(max-width: 767px) {
@@ -76,6 +70,13 @@ export const CarouselDepostions = styled.div`
 
     @media(max-width: 1199px) and (min-width: 992px) {
         width: 992px;
+
+        .carouselDesktop {
+
+            div.swiper-container {
+                width: 872px;
+            }
+        }
     } 
 
     @media(max-width: 991px) and (min-width: 768px) {
@@ -92,6 +93,7 @@ export const CarouselDepostions = styled.div`
         .carouselTablet {
             div.swiper-container {
                 display: block;
+                width: 660px;
             }
         }
     }
@@ -133,17 +135,15 @@ export const CarouselDepostions = styled.div`
 
         @media(max-width: 1199px) and (min-width: 992px) {
             z-index: 0;
-            top: 300px;
-            left: 10px;
+            left: 0;
         }
 
         @media(max-width: 991px) and (min-width: 768px) {
-            left: 40px;
-            top: 270px
+            left: 0px;
         }
 
         @media(max-width: 767px) {
-            left: calc(50% - 52px)
+            left: calc(50% - 53px)
         }
     }
 
@@ -157,17 +157,15 @@ export const CarouselDepostions = styled.div`
 
         @media(max-width: 1199px) and (min-width: 992px) {
             z-index: 0;
-            top: 300px;
-            right: 10px;
+            right: 0;
         }
 
         @media(max-width: 991px) and (min-width: 768px) {
-            right: 40px;
-            top: 270px;
+            right: 0px;
         }
 
         @media(max-width: 767px) {
-            right: calc(50% - 52px);
+            right: calc(50% - 53px);
         }
     }
 
@@ -176,16 +174,18 @@ export const CarouselDepostions = styled.div`
         display: flex;
         justify-content: space-between;
         padding: 20px 5px;
-
+        
 
         @media(max-width: 1199px) and (min-width: 992px) {
             justify-content: space-around;
-            padding: 20px 0;
+            padding: 20px 2px;
+            width: 872px;
         } 
 
         @media(max-width: 991px) and (min-width: 768px) {
-            justify-content: space-around;
-            padding: 10px 20px;
+            justify-content: space-between;
+            padding: 10px 2px;
+            width: 660px;
         }
     }
 
@@ -201,14 +201,12 @@ export const CarouselDepostions = styled.div`
             @media(max-width: 1199px) and (min-width: 992px) {
                 opacity: 0;
                 z-index: 10000;
-                margin-top: 150px;
-                margin-left: 10px;
+                margin-left: -60px;
             }
 
             @media(max-width: 991px) and (min-width: 768px) {
-                margin-left: 40px;
+                margin-left: -55px;
                 opacity: 0;
-                margin-top: 140px;
             }
 
             @media(max-width: 767px) {
@@ -227,14 +225,12 @@ export const CarouselDepostions = styled.div`
             @media(max-width: 1199px) and (min-width: 992px) {
                 z-index: 40000;
                 opacity: 0;
-                margin-top: 150px;
-                margin-right: 10px;
+                margin-right: -60px;
             }
 
             @media(max-width: 991px) and (min-width: 768px) {
-                margin-right: 40px;
+                margin-right: -55px;
                 opacity: 0;
-                margin-top: 140px;
             }
 
             @media(max-width: 767px) {

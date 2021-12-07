@@ -9,7 +9,7 @@ export const CardDepositionContainer = styled.li`
     width: 370px;
 
     @media(max-width: 1199px) and (min-width: 992px) {
-        width: 300px
+        width: 280px
     }
 
     @media(max-width: 991px) and (min-width: 768px) {
@@ -48,6 +48,10 @@ export const CardDepositionContainer = styled.li`
             font-family: ${({ theme }) => { return theme.FONTS.DEFAULT; }};
             color: ${({ theme }) => { return theme.COLORS.PRIMARY; }};
             font-weight: 500;
+
+            @media(max-width: 1199px) and (min-width: 992px) {
+                font-size:0.85rem
+            }
         }
 
         span {

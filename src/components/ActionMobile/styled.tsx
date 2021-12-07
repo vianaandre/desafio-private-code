@@ -7,28 +7,28 @@ export const ActionMobileContainer = styled.section`
     margin-top: 200px;
     margin-bottom: 4rem;
 
+    @media(min-width: 768px) and (max-width: 997px) {
+        margin-top: 100px
+    }
+
     @media(max-width: 767px) {
         padding-top: 3rem;
+        margin-top: 100px
     }
 
 
     .actionMobile-content {
-        width: 1220px;
-        margin: 0 auto;
 
         display: flex;
         justify-content: space-between;
 
-        @media(min-width: 998px) and (max-width: 1219px) {
-            width: 998px;
-        }
 
         @media(min-width: 768px) and (max-width: 997px) {
-            width: 768px;
+            flex-direction: column;
+            align-items: center;
         }
 
         @media(max-width: 767px) {
-            width: 320px;
             flex-direction: column;
         }
 
@@ -37,6 +37,7 @@ export const ActionMobileContainer = styled.section`
 
             @media(min-width: 768px) and (max-width: 997px) {
                 width: 400px;
+                order: 2
             }
 
             @media(max-width: 767px) {
@@ -55,6 +56,12 @@ export const ActionMobileContainer = styled.section`
 
             @media(min-width: 768px) and (max-width: 997px) {
                 margin-left: 1.5rem;
+                margin: 0 auto;
+                margin-bottom: 190px;
+                margin-top: 54px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             @media(max-width: 767px) {
@@ -66,9 +73,16 @@ export const ActionMobileContainer = styled.section`
                 align-items: center;
                 gap: 1rem;
 
+                @media(min-width: 768px) and (max-width: 997px) {
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 0 auto;
+                }
+
                 @media(max-width: 767px) {
                     flex-direction: column;
                 }
+
 
                 h4 {
                     margin-top: 10px;
@@ -94,6 +108,7 @@ export const ActionMobileContainer = styled.section`
 
                 @media(min-width: 768px) and (max-width: 997px) {
                     width: 100%;
+                    text-align: center;
                 }
 
                 @media(max-width: 767px) {

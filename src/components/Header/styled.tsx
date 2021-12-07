@@ -17,7 +17,7 @@ export const HeaderContainer = styled.header<{
         display: none;
     }
 
-    @media(max-width: 767px) {
+    @media(max-width: 991px) {
 
         .header-mobile {
             display: block;
@@ -128,6 +128,10 @@ export const HeaderContainer = styled.header<{
                 right: ${({ active }) => { return (active ? 0 : '-100%'); }};
                 transition: 300ms;
                 top: 0;
+
+                @media(min-width: 768px) and (max-width: 997px) {
+                    padding: 150px;
+                }
 
             }
         }

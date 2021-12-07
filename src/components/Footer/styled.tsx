@@ -2,23 +2,15 @@ import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
 
-    width: 1220px;
-    margin: 0 auto;
     padding: 5rem 0 3rem 0;
-
     margin-bottom: 30px;
 
-    @media(min-width: 998px) and (max-width: 1219px) {
-        width: 998px;
-    }
-
-    @media(min-width: 768px) and (max-width: 997px) {
-        width: 768px;
-    }
-
     @media(max-width: 767px) {
-        width: 320px;
         padding: 0 0 3rem 0;
+    }
+
+    @media(max-width: 991px) and (min-width: 768px) {
+        padding-top: 0;
     }
 
     .footer-information {
@@ -27,6 +19,12 @@ export const FooterContainer = styled.footer`
         padding-bottom: 2rem;
         border-bottom: 1px solid rgba(84, 84, 212, 0.34);
         position: relative;
+
+        @media(max-width: 991px) and (min-width: 768px) {
+            justify-content: space-between;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
 
         .img-mobile {
             display: none;
@@ -108,6 +106,10 @@ export const FooterContainer = styled.footer`
         display: flex;
         justify-content: space-between;
         margin-top: 2rem;
+
+        @media(min-width: 768px) and (max-width: 997px)  {
+            padding: 0 30px;
+        }
 
         @media(max-width: 767px) {
             flex-direction: column;

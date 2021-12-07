@@ -7,8 +7,12 @@ export const PlanOneYearContainer = styled.div`
     padding: 2.5rem 2rem;
     border-radius: 18px;
 
-    @media(min-width: 998px) and (max-width: 1219px) {
-        width: 490px;
+    @media(max-width: 1199px) and (min-width: 992px) {
+        width: 49%;
+    }
+
+    @media(max-width: 991px) and (min-width: 768px) {
+        width: 550px;
     }
 
     @media(max-width: 767px) {

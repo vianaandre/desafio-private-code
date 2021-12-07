@@ -27,6 +27,7 @@ export const ExplicationContainer = styled.section`
 
             @media(min-width: 768px) and (max-width: 997px) {
                 flex-direction: column;
+                justify-content: center;
 
                 img {
                     width: 500px;
@@ -49,9 +50,11 @@ export const ExplicationContainer = styled.section`
                 width: 50%;
 
                 @media(min-width: 768px) and (max-width: 997px) {
-                    width: 100%;
+                    width: 80%;
                     order: 1;
+                    margin: 0 auto;
                     margin-bottom: 2rem;
+                    text-align: center;
                 }
 
                 @media(max-width: 767px) {

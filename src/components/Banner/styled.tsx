@@ -20,6 +20,10 @@ export const BannerContainer = styled.section`
             display: none
         }
 
+        @media(max-width: 991px) and (min-width: 768px) {
+            display: none;
+        }
+
         @media(max-width: 1199px) and (min-width: 992px) {
             right: -300px;
             top: -150px
@@ -32,6 +36,10 @@ export const BannerContainer = styled.section`
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media(max-width: 991px) and (min-width: 768px) {
+            padding-left: 0;
+        }
 
         @media(max-width: 767px) {
             padding-left: 0;

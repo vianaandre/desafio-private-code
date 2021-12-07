@@ -7,6 +7,9 @@ export const CardMethodsContainer = styled.div`
 
     @media(min-width: 768px) and (max-width: 997px) {
         width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     @media(max-width: 767px)  {
@@ -32,6 +35,10 @@ export const CardMethodsContainer = styled.div`
             flex-direction: column;
             gap: 6px;
             margin-top: 1rem;
+
+            @media(min-width: 768px) and (max-width: 997px) {
+                display: none;
+            }
 
             @media(max-width: 767px) {
                 display: none;
@@ -72,6 +79,12 @@ export const CardMethodsContainer = styled.div`
 
     .informationPlans-content-cardMethods-explication {
         margin-left: 2rem;
+
+        @media(min-width: 768px) and (max-width: 997px) {
+            margin-left: 0;
+            margin-top: 2rem;
+            width: 70%;
+        }
 
         @media(max-width: 767px) {
             margin-left: 0;
